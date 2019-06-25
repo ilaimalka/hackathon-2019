@@ -1,0 +1,30 @@
+### Gulp output ###
+reports
+src/main/resources/static
+src/main/resources/staticfiles.json
+src/main/resources/*.html
+
+### IDE ###
+.settings
+.project
+.classpath
+.project
+.checkstyle
+.settings
+.idea
+*.iml
+
+### generated ###
+bin
+target
+
+
+### misc ###
+node_modules
+.DS_Store
+dependency-reduced-pom.xml
+.cache
+.sass-cache
+.tmpBin
+*.versionsBackup
+npm-debug.log
