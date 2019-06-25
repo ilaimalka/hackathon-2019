@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+
+
+  <section ng-app="myApp" ng-controller="TabController as tab">
+    <div class="container">
+  <div id="tabs" class="tabs">
+    <nav>
+      <ul>
+        <li ng-class="{active:tab.isSet(1)}" class="tab-current"><a href="#section-1" class="icon-shop" ng-click="tab.setTab(1)"><span>Shop</span></a></li>
+        <li ng-class="{active:tab.isSet(2)}"><a href="#section-2" class="icon-cup" ng-click="tab.setTab(2)"><span>Drinks</span></a></li>
+        <li ng-class="{active:tab.isSet(3)}"><a href="#section-3" class="icon-food" ng-click="tab.setTab(3)"><span>Food</span></a></li>
+        <li ng-class="{active:tab.isSet(4)}"><a href="#section-4" class="icon-lab" ng-click="tab.setTab(4)"><span>Lab</span></a></li>
+        <li ng-class="{active:tab.isSet(5)}"><a href="#section-5" class="icon-truck" ng-click="tab.setTab(5)"><span>Order</span></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section id="section-1" ng-show="tab.isSet(1)" class="content-current">
+        <div class="mediabox">
+          <img src="img/01.png" alt="img01" />
+          <h3>Sushi Gumbo Beetroot</h3>
+          <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/02.png" alt="img02" />
+          <h3>Pea Sprouts Fava Soup</h3>
+          <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/03.png" alt="img03" />
+          <h3>Turnip Broccoli Sashimi</h3>
+          <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+        </div>
+      </section>
+      <section id="section-2" ng-show="tab.isSet(2)">
+        <div class="mediabox">
+          <img src="img/04.png" alt="img04" />
+          <h3>Asparagus Cucumber Cake</h3>
+          <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+        </div>
+        <div class="mediabox">
+          <img src="img/05.png" alt="img05" />
+          <h3>Magis Kohlrabi Gourd</h3>
+          <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/06.png" alt="img06" />
+          <h3>Ricebean Rutabaga</h3>
+          <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+        </div>
+      </section>
+      <section id="section-3" ng-show="tab.isSet(3)">
+        <div class="mediabox">
+          <img src="img/02.png" alt="img02" />
+          <h3>Noodle Curry</h3>
+          <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/06.png" alt="img06" />
+          <h3>Leek Wasabi</h3>
+          <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/01.png" alt="img01" />
+          <h3>Green Tofu Wrap</h3>
+          <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
+        </div>
+      </section>
+      <section id="section-4" ng-show="tab.isSet(4)">
+        <div class="mediabox">
+          <img src="img/03.png" alt="img03" />
+          <h3>Tomato Cucumber Curd</h3>
+          <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+        </div>
+        <div class="mediabox">
+          <img src="img/01.png" alt="img01" />
+          <h3>Mushroom Green</h3>
+          <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/04.png" alt="img04" />
+          <h3>Swiss Celery Chard</h3>
+          <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+        </div>
+      </section>
+      <section id="section-5" ng-show="tab.isSet(5)">
+        <div class="mediabox">
+          <img src="img/02.png" alt="img02" />
+          <h3>Radish Tomato</h3>
+          <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/06.png" alt="img06" />
+          <h3>Fennel Wasabi</h3>
+          <p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p>
+        </div>
+        <div class="mediabox">
+          <img src="img/01.png" alt="img01" />
+          <h3>Red Tofu Wrap</h3>
+          <p>Green horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
+        </div>
+      </section>
+    </div><!-- /content -->
+  </div><!-- /tabs -->
+    </div>
+  </section>
+
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+</body>
+</html>
