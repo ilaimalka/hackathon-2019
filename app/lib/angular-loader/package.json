@@ -1,32 +1,32 @@
 {
   "_args": [
     [
-      "angular-loader@1.7.5",
-      "/Users/ilaimalka/repositories/hackathon2019/angular-seed"
+      "angular-loader@1.7.8",
+      "/Users/ilaimalka/repositories/hackathon2019"
     ]
   ],
-  "_from": "angular-loader@1.7.5",
-  "_id": "angular-loader@1.7.5",
+  "_from": "angular-loader@1.7.8",
+  "_id": "angular-loader@1.7.8",
   "_inBundle": false,
-  "_integrity": "sha512-3dDyHc/ySVs/EjKcKOJQ8tppsnp64ZO1lrUD6H8JpKq947lntdE/KF5V2Urv91SaGofRY9VwLibkLTdF32FR5Q==",
+  "_integrity": "sha512-MKwUS618iCbFfv6Igs1uYglVmjol+4g4rNSK2ezdyWyC6+cXffPFUm0voj3qf3HuN5R1pH1pGCpCB0sO/qFHig==",
   "_location": "/angular-loader",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "angular-loader@1.7.5",
+    "raw": "angular-loader@1.7.8",
     "name": "angular-loader",
     "escapedName": "angular-loader",
-    "rawSpec": "1.7.5",
+    "rawSpec": "1.7.8",
     "saveSpec": null,
-    "fetchSpec": "1.7.5"
+    "fetchSpec": "1.7.8"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/angular-loader/-/angular-loader-1.7.5.tgz",
-  "_spec": "1.7.5",
-  "_where": "/Users/ilaimalka/repositories/hackathon2019/angular-seed",
+  "_resolved": "https://registry.npmjs.org/angular-loader/-/angular-loader-1.7.8.tgz",
+  "_spec": "1.7.8",
+  "_where": "/Users/ilaimalka/repositories/hackathon2019",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -62,5 +62,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.7.5"
+  "version": "1.7.8"
 }
