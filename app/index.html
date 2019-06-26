@@ -23,15 +23,15 @@
   <div id="tabs" class="tabs">
     <nav>
       <ul>
-        <li ng-class="{active:tab.isSet(1)}" class="tab-current"><a href="#section-1" class="icon-shop" ng-click="tab.setTab(1)"><span>Shop</span></a></li>
-        <li ng-class="{active:tab.isSet(2)}"><a href="#section-2" class="icon-cup" ng-click="tab.setTab(2)"><span>Drinks</span></a></li>
-        <li ng-class="{active:tab.isSet(3)}"><a href="#section-3" class="icon-food" ng-click="tab.setTab(3)"><span>Food</span></a></li>
-        <li ng-class="{active:tab.isSet(4)}"><a href="#section-4" class="icon-lab" ng-click="tab.setTab(4)"><span>Lab</span></a></li>
-        <li ng-class="{active:tab.isSet(5)}"><a href="#section-5" class="icon-truck" ng-click="tab.setTab(5)"><span>Order</span></a></li>
+        <li ng-class="tab.isSet(1) ? 'tab-current': ''"><a href="#section-1" class="icon-shop" ng-click="tab.setTab(1)"><span>Shop</span></a></li>
+        <li ng-class="tab.isSet(2) ? 'tab-current': ''"><a href="#section-2" class="icon-cup" ng-click="tab.setTab(2)"><span>Drinks</span></a></li>
+        <li ng-class="tab.isSet(3) ? 'tab-current': ''"><a href="#section-3" class="icon-food" ng-click="tab.setTab(3)"><span>Food</span></a></li>
+        <li ng-class="tab.isSet(4) ? 'tab-current': ''"><a href="#section-4" class="icon-lab" ng-click="tab.setTab(4)"><span>Lab</span></a></li>
+        <li ng-class="tab.isSet(5) ? 'tab-current': ''"><a href="#section-5" class="icon-truck" ng-click="tab.setTab(5)"><span>Order</span></a></li>
       </ul>
     </nav>
     <div class="content">
-      <section id="section-1" ng-show="tab.isSet(1)" class="content-current">
+      <section id="section-1" ng-show="tab.isSet(1)" ng-class="tab.isSet(1) ? 'content-current': ''">
         <div class="mediabox">
           <img src="img/01.png" alt="img01" />
           <h3>Sushi Gumbo Beetroot</h3>
@@ -48,7 +48,7 @@
           <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
         </div>
       </section>
-      <section id="section-2" ng-show="tab.isSet(2)">
+      <section id="section-2" ng-show="tab.isSet(2)" ng-class="tab.isSet(2) ? 'content-current': ''">
         <div class="mediabox">
           <img src="img/04.png" alt="img04" />
           <h3>Asparagus Cucumber Cake</h3>
@@ -65,7 +65,7 @@
           <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
         </div>
       </section>
-      <section id="section-3" ng-show="tab.isSet(3)">
+      <section id="section-3" ng-show="tab.isSet(3)" ng-class="tab.isSet(3) ? 'content-current': ''">
         <div class="mediabox">
           <img src="img/02.png" alt="img02" />
           <h3>Noodle Curry</h3>
@@ -82,7 +82,7 @@
           <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
         </div>
       </section>
-      <section id="section-4" ng-show="tab.isSet(4)">
+      <section id="section-4" ng-show="tab.isSet(4)" ng-class="tab.isSet(4) ? 'content-current': ''">
         <div class="mediabox">
           <img src="img/03.png" alt="img03" />
           <h3>Tomato Cucumber Curd</h3>
@@ -99,7 +99,7 @@
           <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
         </div>
       </section>
-      <section id="section-5" ng-show="tab.isSet(5)">
+      <section id="section-5" ng-show="tab.isSet(5)" ng-class="tab.isSet(5) ? 'content-current': ''">
         <div class="mediabox">
           <img src="img/02.png" alt="img02" />
           <h3>Radish Tomato</h3>
